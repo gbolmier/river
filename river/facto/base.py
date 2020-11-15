@@ -71,7 +71,7 @@ class BaseFM:
                 x_l2_norm = (x ** 2).sum() ** 0.5
                 x = x / x_l2_norm
 
-        return self._learn_one(x, y, sample_weight=sample_weight)
+            return self._learn_one(x, y, sample_weight=sample_weight)
 
     def _ohe_cat_features(self, x):
         """One hot encodes string features considering them as categorical."""
